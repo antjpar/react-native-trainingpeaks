@@ -1,5 +1,5 @@
 
-package com.valerit;
+package com.valerit.trainingpeaks;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

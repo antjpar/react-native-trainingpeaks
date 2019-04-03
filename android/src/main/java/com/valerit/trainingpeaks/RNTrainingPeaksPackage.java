@@ -1,5 +1,5 @@
 
-package com.valerit;
+package com.valerit.trainingpeaks;
 
 import java.util.Arrays;
 import java.util.Collections;
