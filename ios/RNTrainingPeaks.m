@@ -17,9 +17,9 @@ RCT_EXPORT_METHOD(readFitFile: (NSString *) path
   if (fileData != NULL) {
    
     NSString *str = [fileData base64EncodedStringWithOptions:0];
-    resolve(str)
+    resolve(str);
   } else {
-    reject(@"file_not_found");
+    reject(@"file_not_found", @"Empty or invalid file", NULL);
   }
 }
   
