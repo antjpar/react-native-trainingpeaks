@@ -23,9 +23,10 @@ RCT_EXPORT_MODULE()
     NSString* productionUrl = @"https://oauth.trainingpeaks.com/OAuth/Authorize";
     
     response_type = response_type == NULL ? @"code" : response_type;
-    scope = scope == NULL ? @"events:write,events:read,athlete:profilese" : scope;
+    scope = scope == NULL ? @"file:write athlete:profile workouts:wod" : scope;
+    scope = [scope stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+
     NSString* url = sandbox ? sandboxUrl : productionUrl;
-    
     
     NSString* endpoint = [NSString stringWithFormat: @"%@?client_id=%@&redirect_uri=%@&response_type=%@&scope=%@", url, client_id, redirect_uri, response_type, scope ];
 
