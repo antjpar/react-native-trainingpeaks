@@ -58,4 +58,6 @@ public class RNTrainingPeaksModule extends ReactContextBaseJavaModule {
     ReactContext context = getReactApplicationContext();
     context.startActivity(intent);
   }
+
+
 }
