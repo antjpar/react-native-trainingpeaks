@@ -62,7 +62,7 @@ public class RNTrainingPeaksModule extends ReactContextBaseJavaModule {
         context.startActivity(intent);
     }
 
-
+    // Read fit file as base 64
     @ReactMethod
     public void readFitFile(String path, Promise promise) {
         java.io.File file = new java.io.File(path);
