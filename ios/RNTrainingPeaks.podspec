@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNTrainingPeaks
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/valerit/react-native-trainingpeaks"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.author             = { "author" => "valeritsert@gmail.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/author/RNTrainingPeaks.git", :tag => "master" }
-  s.source_files  = "RNTrainingPeaks/**/*.{h,m}"
+  s.source_files  = "*.{h,m,mm}"
   s.requires_arc = true
 
 
